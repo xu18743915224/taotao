@@ -26,10 +26,13 @@
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="configLocation" value="classpath:mybatis/SqlMapConfig.xml"></property>
 		<property name="dataSource" ref="dataSource"></property>
+		<!-- 指定SQL定义文件mapper的xml -->
+		<property name="mapperLocations" value="classpath:mapper/*.xml"></property>
+		
 	</bean>
 	<!-- 配置扫描包，加载mapper代理对象 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.taotao.mapper"></property>
+		<property name="basePackage" value="com.taotao.dao"></property>
 	</bean>	
 </beans>
 
