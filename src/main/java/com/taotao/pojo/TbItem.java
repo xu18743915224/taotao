@@ -35,15 +35,17 @@ public class TbItem {
         this.title = title == null ? null : title.trim();
     }
 
-    public String getSellPoint() {
-        return sellPoint;
-    }
 
-    public void setSellPoint(String sellPoint) {
-        this.sellPoint = sellPoint == null ? null : sellPoint.trim();
-    }
 
-    public Long getPrice() {
+	public String getSellPoint() {
+		return sellPoint;
+	}
+
+	public void setSellPoint(String sellPoint) {
+		this.sellPoint = sellPoint;
+	}
+
+	public Long getPrice() {
         return price;
     }
 

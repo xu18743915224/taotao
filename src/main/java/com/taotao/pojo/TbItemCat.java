@@ -1,23 +1,17 @@
 package com.taotao.pojo;
 
 import java.util.Date;
-
+/**商品类目   */
 public class TbItemCat {
-    private Long id;
-
-    private Long parentId;
-
-    private String name;
-
-    private Integer status;
-
-    private Integer sortOrder;
-
-    private Boolean isParent;
-
-    private Date created;
-
-    private Date updated;
+	
+    private Long id;			//类目ID	
+    private Long parentId;		//父类目ID=0时,代表的是一级的类目
+    private String name;		//类目名称	
+    private Integer status;		//状态,可选值:1正常 2删除
+    private Integer sortOrder;	//排列序号，表示同级类目的展现次序，如数值相等则按名称次序排列。取值范围:大于零的整数	
+    private Boolean isParent;	//该类目是否为父类目，1为true，0为false
+    private Date created;		//创建时间
+    private Date updated;		//更新时间
 
     public Long getId() {
         return id;
