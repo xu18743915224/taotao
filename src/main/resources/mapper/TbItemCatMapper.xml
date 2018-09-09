@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>  	
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ 
+ <!-- 追加一个sql mapper接口和哪一个方法对应那么接口就写哪一个地址 -->
+ <mapper namespace="com.taotao.dao.ItemCatDao">
+	<!--根据TbItemCat商品类目的parentId查找分类列表-->
+	<select id="findTbItemCatListByParentId" parameterType="long" resultType="com.taotao.pojo.TbItemCat">
+		select * from tb_item_cat where parentId=#{parentId}
+	</select>
+ </mapper>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
